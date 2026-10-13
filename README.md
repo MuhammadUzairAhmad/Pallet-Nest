@@ -48,6 +48,8 @@ Optional package gap and edge clearance default to zero, including for older sav
 
 Copy `.env.example` to `.env.local` and configure:
 
+Local development already has an ignored `.env.local` using `http://localhost:3000` and the demo address `help@example.com`. The values in `.env.example` are placeholders. For deployment, set both variables in your hosting provider's environment settings, then rebuild and deploy. `NEXT_PUBLIC_` values are public and included at build time; do not put secrets in them.
+
 - `NEXT_PUBLIC_SITE_URL`: the actual HTTPS origin. Enables route canonical URLs and sitemap entries. Do not deploy the example domain.
 - `NEXT_PUBLIC_CONTACT_EMAIL`: the operator's feedback email. Without it, the feedback page describes how to prepare a reproducible case but does not claim to send feedback.
 
